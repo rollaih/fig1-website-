@@ -90,7 +90,6 @@ const BlogPostSchema = new Schema<IBlogPost>({
   timestamps: true
 });
 
-BlogPostSchema.index({ slug: 1 });
 BlogPostSchema.index({ status: 1 });
 BlogPostSchema.index({ visibility: 1 });
 BlogPostSchema.index({ publishedAt: -1 });
@@ -104,8 +103,10 @@ BlogPostSchema.pre('save', function(next) {
   
   if (this.content) {
     const wordsPerMinute = 200;
-    const wordCount = this.content.split(/\s+/).length;
-    this.readingTime = Math.ceil(wordCount / wordsPerMinute);
+    // Strip HTML tags and count words
+    const plainText = this.content.replace(/<[^>]*>/g, '');
+    const wordCount = plainText.trim().split(/\s+/).filter(word => word.length > 0).length;
+    this.readingTime = Math.max(1, Math.ceil(wordCount / wordsPerMinute));
   }
   
   next();

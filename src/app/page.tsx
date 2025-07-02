@@ -110,7 +110,7 @@ export default function Home() {
               {/* Bottom Row - Two smaller images side by side */}
               <div className="grid grid-cols-2 gap-4 flex-1">
                 {/* Bottom Left */}
-                <div className="relative overflow-hidden bg-cover bg-center min-h-[240px] md:min-h-[160px] group cursor-pointer" style={{borderRadius: '22px', backgroundImage: 'url("/dude.png")'}}>
+                <div className="relative overflow-hidden bg-cover bg-center min-h-[240px] md:min-h-[160px] group cursor-pointer" style={{borderRadius: '22px', backgroundImage: 'url("/Dude.png")'}}>
                   <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
                   <h3 className="absolute bottom-14 left-4 text-white text-3xl md:text-5xl font-light opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{fontFamily: 'var(--font-gowun-batang)'}}>
                     Dude
@@ -140,7 +140,7 @@ export default function Home() {
       <section className="px-6 md:px-12 py-4">
         <div className="max-w-6xl mx-auto text-center">
           <img src="/clientlogos_mobile.png" alt="Client Logos" className="block md:hidden w-full opacity-70" />
-          <img src="/clients.png" alt="Client Logos" className="hidden md:block w-full max-w-4xl mx-auto opacity-70" />
+          <img src="/Clients.png" alt="Client Logos" className="hidden md:block w-full max-w-4xl mx-auto opacity-70" />
         </div>
       </section>
       </div>
@@ -177,7 +177,7 @@ export default function Home() {
               <div className="px-8 py-8 md:px-9 md:py-8 h-auto md:h-72 lg:h-80 flex flex-col relative" style={{borderRadius: '22px', backgroundColor: '#272832'}}>
                 <div className="flex justify-between items-start mb-6 md:mb-10">
                   <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-                    <img src="/icon_AIAgents.png" alt="AI Agents Icon" className="w-11 h-11" />
+                    <img src="/Icon_AIAgents.png" alt="AI Agents Icon" className="w-11 h-11" />
                   </div>
                   <div className="flex justify-end">
                     <span className="text-2xl font-bold uppercase" style={{background: 'linear-gradient(90deg, #B237FF 0%, #EAC0FF 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'}}>NEW: FIG.1 AI</span>
